@@ -679,7 +679,7 @@ gsap.from(".footer-social", {
   stagger: 0.1,
   ease: "back.out(1.7)",
   scrollTrigger: {
-    trigger: ".footer-bottom",
+    trigger: ".footer-grid",
     start: "top 90%",
   },
 });
