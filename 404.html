@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stackly | Corporate Solutions for Scalable Business Growth</title>
+    <meta
+      name="description"
+      content="Stackly delivers corporate technology and business solutions that help organizations streamline operations, improve efficiency, and scale with confidence."
+    />
+    <meta name="robots" content="index, follow" />
+    <meta name="author" content="Stackly" />
+
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="Stackly | Enterprise & Corporate Solutions"
+    />
+    <meta
+      property="og:description"
+      content="Corporate solutions designed to support scalable growth, operational efficiency, and long-term business success."
+    />
+    <meta property="og:site_name" content="Stackly" />
+
+    <!-- GSAP -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/gsap.min.js"></script>
+    <!-- ScrollTrigger -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/ScrollTrigger.min.js"></script>
+    <!-- ScrollTo -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/ScrollToPlugin.min.js"></script>
+    <!-- ScrollSmoother  -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/ScrollSmoother.min.js"></script>
+    <!-- SplitText -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/SplitText.min.js"></script>
+    <!-- RoughEase, ExpoScaleEase and SlowMo are all included in the EasePack file -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/EasePack.min.js"></script>
+
+    <!-- Draggable & inertia -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/Draggable.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/InertiaPlugin.min.js"></script>
+
+    <!-- SplitType -->
+    <script src="https://unpkg.com/split-type"></script>
+
+    <!-- FONT AWESOME -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- GOOGLE FONT CDN -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=Cinzel:wght@400..900&family=Dancing+Script:wght@400..700&family=Della+Respira&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Jost:ital,wght@0,100..900;1,100..900&family=Julius+Sans+One&family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&family=Manrope:wght@200..800&family=Outfit:wght@100..900&family=Rajdhani:wght@300;400;500;600;700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./dist/output.css" />
+    <link rel="stylesheet" href="./style.css" />
+
+    <style>
+      .back-home:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+      }
+    </style>
+  </head>
+  <body>
+    <section
+      class="error-right-section min-h-screen px-6 py-12 grid lg:grid-cols-2 items-center justify-center bg-white overflow-hidden"
+    >
+      <div>
+        <img src="./src/assets/404.webp" alt="404">
+      </div>
+
+      <div class=" error-content">
+        <h1 class="text-4xl md:text-5xl xl:text-6xl font-extrabold text-teal-600 mb-6">Oops…</h1>
+
+        <h2 class="text-xl md:text-2xl font-bold text-gray-900 leading-snug mb-4">
+          We are not being able to find the<br />
+          page you are looking for.
+        </h2>
+
+        <p class="text-gray-500 leading-relaxed mb-8">
+          The page you are looking for was moved, removed, renamed or never
+          existed.
+        </p>
+
+        <!-- CTA -->
+        <a
+          href="./index.html"
+          class="back-home inline-flex items-center justify-center bg-teal-600 text-white px-8 py-4 rounded-lg font-semibold"
+        >
+          Back to home
+        </a>
+      </div>
+    </section>
+
+    <script>
+      gsap.from(".error-content > *", {
+        y: 30,
+        opacity: 0,
+        duration: 0.9,
+        stagger: 0.12,
+        ease: "power3.out",
+      });
+    </script>
+  </body>
+</html>

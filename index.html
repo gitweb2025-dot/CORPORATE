@@ -1,0 +1,1499 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stackly | Corporate Solutions for Scalable Business Growth</title>
+    <meta
+      name="description"
+      content="Stackly delivers corporate technology and business solutions that help organizations streamline operations, improve efficiency, and scale with confidence."
+    />
+    <meta name="robots" content="index, follow" />
+    <meta name="author" content="Stackly" />
+
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="Stackly | Enterprise & Corporate Solutions"
+    />
+    <meta
+      property="og:description"
+      content="Corporate solutions designed to support scalable growth, operational efficiency, and long-term business success."
+    />
+    <meta property="og:site_name" content="Stackly" />
+
+    <!-- GSAP -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/gsap.min.js"></script>
+    <!-- ScrollTrigger -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/ScrollTrigger.min.js"></script>
+    <!-- ScrollTo -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/ScrollToPlugin.min.js"></script>
+    <!-- ScrollSmoother  -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/ScrollSmoother.min.js"></script>
+    <!-- SplitText -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/SplitText.min.js"></script>
+    <!-- RoughEase, ExpoScaleEase and SlowMo are all included in the EasePack file -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/EasePack.min.js"></script>
+
+    <!-- Draggable & inertia -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/Draggable.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/InertiaPlugin.min.js"></script>
+
+    <!-- SplitType -->
+    <script src="https://unpkg.com/split-type"></script>
+
+    <!-- FONT AWESOME -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- GOOGLE FONT CDN -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=Cinzel:wght@400..900&family=Dancing+Script:wght@400..700&family=Della+Respira&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Jost:ital,wght@0,100..900;1,100..900&family=Julius+Sans+One&family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&family=Manrope:wght@200..800&family=Outfit:wght@100..900&family=Rajdhani:wght@300;400;500;600;700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- SPLIDE JS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+
+    <!-- LENIS CDN -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/lenis@1.3.17/dist/lenis.css"
+    />
+    <script src="https://unpkg.com/lenis@1.3.17/dist/lenis.min.js"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./dist/output.css" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body class="font-tertiary">
+    <div>
+      <!-- NAVBAR -->
+      <header class="site-header fixed top-0 left-0 w-full bg-white z-50">
+        <div
+          class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between"
+        >
+          <!-- LOGO -->
+          <a href="./index.html" class="logo flex items-center gap-3">
+            <span class="text-xl font-semibold text-primary">STACKLY</span>
+          </a>
+
+          <!-- DESKTOP NAV -->
+          <nav class="nav-desktop hidden lg:flex items-center gap-10">
+            <!-- HOME -->
+            <div class="nav-item has-sub relative">
+              <div class="flex items-center gap-0.5">
+                <a
+                  href="./index.html"
+                  class="nav-link relative inline-block px-1 py-2 transition-colors duration-200 hover:text-white after:absolute after:left-1/2 after:-bottom-0.5 after:h-0.5 after:w-0 after:-translate-x-1/2 after:bg-primary after:transition-all after:duration-300 hover:after:w-full"
+                  >Home</a
+                >
+                <button class="submenu-toggle" aria-label="Open Home submenu">
+                  <i class="fa-solid fa-angle-down"></i>
+                </button>
+              </div>
+
+              <div
+                class="submenu absolute top-full left-0 mt-4 bg-white shadow-lg rounded-md w-48"
+              >
+                <a href="./404.html" class="submenu-item block px-5 py-3"
+                  >Home One</a
+                >
+                <a href="./404.html" class="submenu-item block px-5 py-3"
+                  >Home Two</a
+                >
+              </div>
+            </div>
+
+            <a
+              href="./404.html"
+              class="nav-link relative inline-block px-1 py-2 transition-colors duration-200 hover:text-white after:absolute after:left-1/2 after:-bottom-0.5 after:h-0.5 after:w-0 after:-translate-x-1/2 after:bg-primary after:transition-all after:duration-300 hover:after:w-full"
+              >Pages</a
+            >
+
+            <a
+              href="./404.html"
+              class="nav-link relative inline-block px-1 py-2 transition-colors duration-200 hover:text-white after:absolute after:left-1/2 after:-bottom-0.5 after:h-0.5 after:w-0 after:-translate-x-1/2 after:bg-primary after:transition-all after:duration-300 hover:after:w-full"
+              >Services</a
+            >
+
+            <a
+              href="./404.html"
+              class="nav-link relative inline-block px-1 py-2 transition-colors duration-200 hover:text-white after:absolute after:left-1/2 after:-bottom-0.5 after:h-0.5 after:w-0 after:-translate-x-1/2 after:bg-primary after:transition-all after:duration-300 hover:after:w-full"
+              >Projects</a
+            >
+
+            <!-- BLOG -->
+            <div class="nav-item has-sub relative">
+              <div class="flex items-center gap-0.5">
+                <a
+                  href="./404.html"
+                  class="nav-link relative inline-block px-1 py-2 transition-colors duration-200 hover:text-white after:absolute after:left-1/2 after:-bottom-0.5 after:h-0.5 after:w-0 after:-translate-x-1/2 after:bg-primary after:transition-all after:duration-300 hover:after:w-full"
+                  >Blog</a
+                >
+                <button class="submenu-toggle" aria-label="Open Blog submenu">
+                  <i class="fa-solid fa-angle-down"></i>
+                </button>
+              </div>
+
+              <div
+                class="submenu absolute top-full left-0 mt-4 bg-white shadow-lg rounded-md w-48"
+              >
+                <a href="./404.html" class="submenu-item block px-5 py-3"
+                  >Blog Grid</a
+                >
+                <a href="./404.html" class="submenu-item block px-5 py-3"
+                  >Blog Single</a
+                >
+              </div>
+            </div>
+
+            <a
+              href="./404.html"
+              class="nav-link relative inline-block px-1 py-2 transition-colors duration-200 hover:text-white after:absolute after:left-1/2 after:-bottom-0.5 after:h-0.5 after:w-0 after:-translate-x-1/2 after:bg-primary after:transition-all after:duration-300 hover:after:w-full"
+              >Contact</a
+            >
+          </nav>
+
+          <!-- CALL INFO -->
+          <div class="call-info hidden lg:flex items-center gap-3">
+            <div>
+              <a
+                href="./404.html"
+                class="font-medium bg-primary px-6 py-4 rounded-lg text-white"
+                >Get In Touch</a
+              >
+            </div>
+
+            <a
+              href="./404.html"
+              class="call-icon w-13 h-13 rounded-lg bg-primary flex items-center justify-center text-white"
+            >
+              <i class="fa-regular fa-circle-user text-2xl"></i>
+            </a>
+          </div>
+
+          <!-- HAMBURGER -->
+          <button class="hamburger lg:hidden text-2xl" aria-label="Open menu">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
+
+        <!-- MOBILE VIEW -->
+        <div class="mobile-menu fixed inset-0 bg-white z-50 hidden">
+          <!-- TOP BAR -->
+          <div class="h-20 px-6 flex items-center justify-between shadow">
+            <span class="text-lg font-semibold text-primary">STACKLY</span>
+            <button class="mobile-close text-2xl" aria-label="Close menu">
+              <i class="fa-solid fa-xmark"></i>
+            </button>
+          </div>
+
+          <!-- NAV -->
+          <nav class="mobile-nav px-6 mt-8 flex flex-col gap-6">
+            <!-- HOME -->
+            <div class="mobile-item has-sub">
+              <div class="flex items-center justify-between">
+                <a href="./index.html" class="mobile-link">Home</a>
+                <button
+                  class="mobile-sub-toggle"
+                  aria-label="Toggle Home submenu"
+                >
+                  <i class="fa-solid fa-plus"></i>
+                </button>
+              </div>
+
+              <div class="mobile-submenu">
+                <a href="./404.html" class="mobile-sublink block py-2"
+                  >Home One</a
+                >
+                <a href="./404.html" class="mobile-sublink block py-2"
+                  >Home Two</a
+                >
+              </div>
+            </div>
+
+            <a href="./404.html" class="mobile-link">Pages</a>
+
+            <a href="./404.html" class="mobile-link">Services</a>
+
+            <a href="./404.html" class="mobile-link">Projects</a>
+
+            <!-- BLOG -->
+            <div class="mobile-item has-sub">
+              <div class="flex items-center justify-between">
+                <a href="./404.html" class="mobile-link">Blog</a>
+                <button
+                  class="mobile-sub-toggle"
+                  aria-label="Toggle Blog submenu"
+                >
+                  <i class="fa-solid fa-plus"></i>
+                </button>
+              </div>
+
+              <div class="mobile-submenu">
+                <a href="./404.html" class="mobile-sublink block py-2"
+                  >Blog Grid</a
+                >
+                <a href="./404.html" class="mobile-sublink block py-2"
+                  >Blog Single</a
+                >
+              </div>
+            </div>
+
+            <a href="./404.html" class="mobile-link">Contact</a>
+          </nav>
+        </div>
+      </header>
+
+      <!-- HOME -->
+      <section
+        class="max-w-7xl mx-auto relative w-full flex items-center overflow-hidden hero-section"
+      >
+        <!-- Background Image -->
+        <video
+          src="./src/assets/home.mp4"
+          class="absolute inset-0 w-full h-full object-cover"
+          autoplay
+          muted
+          loop
+        ></video>
+
+        <!-- Overlay -->
+        <div class="absolute inset-0 bg-black/60"></div>
+
+        <!-- Content -->
+        <div
+          class="relative max-w-7xl mx-auto px-6 py-32 flex flex-col justify-center"
+        >
+          <div class="m-auto hero-content">
+            <!-- Badge -->
+            <span
+              class="inline-block px-5 py-2 rounded-full border border-teal-400 text-teal-300 text-sm font-medium mb-6 hero-badge"
+            >
+              Our Vision to Grow Better
+            </span>
+
+            <!-- Heading -->
+            <h1
+              class="text-white text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold leading-tight mb-6 hero-title"
+            >
+              Grow Your Business!<br />Performance
+            </h1>
+
+            <!-- Description -->
+            <p class="text-gray-200 text-lg leading-relaxed mb-8 hero-text">
+              We empower enterprises with scalable corporate solutions that
+              enhance operational efficiency, strengthen leadership alignment,
+              and accelerate sustainable business growth through strategic
+              innovation.
+            </p>
+
+            <!-- CTA -->
+            <a
+              href="./404.html"
+              class="inline-flex items-center gap-2 px-8 py-4 bg-teal-500 text-white rounded-md font-semibold hero-btn"
+            >
+              Read More
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ABOUT -->
+      <section class="relative bg-white py-24 overflow-hidden">
+        <div
+          class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center"
+        >
+          <!-- LEFT CONTENT -->
+          <div class="marketing-left">
+            <span class="text-teal-600 font-semibold mb-3 block marketing-tag">
+              Intelligent
+            </span>
+
+            <h2
+              class="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6 marketing-title"
+            >
+              Digital Marketing
+            </h2>
+
+            <p
+              class="text-gray-600 text-lg leading-relaxed mb-10 marketing-intro"
+            >
+              We help brands grow through performance-driven digital strategies
+              that combine creativity, analytics, and automation to generate
+              measurable results.
+            </p>
+
+            <!-- FEATURE 1 -->
+            <div class="flex items-center gap-5 mb-8 marketing-feature">
+              <div>
+                <div
+                  class="w-14 h-14 rounded-full bg-teal-600 flex items-center justify-center text-white"
+                >
+                  <i class="fa-solid fa-chart-line text-xl"></i>
+                </div>
+              </div>
+
+              <div>
+                <h4 class="text-xl font-semibold text-gray-900 mb-2">
+                  Performance Campaigns
+                </h4>
+                <p class="text-gray-600">
+                  ROI-focused ad campaigns across search, social, and display
+                  channels optimized continuously for conversions.
+                </p>
+              </div>
+            </div>
+
+            <!-- FEATURE 2 -->
+            <div class="flex items-center gap-5 mb-10 marketing-feature">
+              <div>
+                <div
+                  class="w-14 h-14 rounded-full bg-teal-600 flex items-center justify-center text-white"
+                >
+                  <i class="fa-solid fa-bullseye text-xl"></i>
+                </div>
+              </div>
+
+              <div>
+                <h4 class="text-xl font-semibold text-gray-900 mb-2">
+                  Audience Targeting
+                </h4>
+                <p class="text-gray-600">
+                  Data-driven audience segmentation that ensures your message
+                  reaches the right customers at the right time.
+                </p>
+              </div>
+            </div>
+
+            <!-- CTA -->
+            <div class="flex flex-wrap items-center gap-6 mb-6">
+              <a
+                href="./404.html"
+                class="px-8 py-4 border border-teal-600 text-teal-600 font-semibold rounded-md marketing-btn"
+              >
+                Read More
+              </a>
+
+              <div>
+                <p class="font-signature text-gray-800">Liam Oliver</p>
+                <p class="text-sm text-gray-500">Founder & CEO of Qetus</p>
+              </div>
+            </div>
+
+            <!-- DOWNLOAD -->
+            <a
+              href="./404.html"
+              class="flex items-center gap-3 text-gray-800 font-medium marketing-download"
+            >
+              Download our latest presentation
+              <div>
+                <span
+                  class="w-9 h-9 rounded-full bg-teal-600 text-white flex items-center justify-center"
+                >
+                  <i class="fa-solid fa-download"></i>
+                </span>
+              </div>
+            </a>
+          </div>
+
+          <!-- RIGHT CONTENT -->
+          <div class="relative flex flex-col gap-40 marketing-right h-full">
+            <img
+              src="./src/assets/a1.webp"
+              alt="./about-bg"
+              class="w-full h-full object-contain absolute inset-0 m-auto"
+            />
+            <!-- CARD 1 -->
+            <div
+              class="bg-white shadow-xl rounded-xl p-8 max-w-sm marketing-card"
+            >
+              <h4 class="text-2xl font-bold text-gray-900 mb-4">
+                Innovative Marketing
+              </h4>
+              <p class="text-gray-600 mb-6">
+                Creative digital solutions designed to boost visibility,
+                engagement, and long-term brand value.
+              </p>
+              <a
+                href="./404.html"
+                class="font-semibold text-teal-600 flex items-center gap-2"
+              >
+                Read More <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+
+            <!-- CARD 2 -->
+            <div
+              class="bg-white shadow-xl rounded-xl p-8 max-w-sm mt-auto ml-auto marketing-card relative bottom-0"
+            >
+              <h4 class="text-2xl font-bold text-gray-900 mb-4">
+                Growth Strategy
+              </h4>
+              <p class="text-gray-600 mb-6">
+                Scalable marketing frameworks built to support rapid growth and
+                sustainable performance.
+              </p>
+              <a
+                href="./404.html"
+                class="font-semibold text-teal-600 flex items-center gap-2"
+              >
+                Read More <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- VIDEO -->
+      <section
+        class="max-w-7xl mx-auto relative pt-28 pb-10 w-full overflow-hidden marketing-hero"
+      >
+        <!-- Background -->
+        <div class="absolute inset-0">
+          <img
+            src="./src/assets/vidbg.webp"
+            class="w-full h-full object-cover"
+            alt="bg"
+          />
+          <div class="absolute inset-0 bg-black/60"></div>
+        </div>
+
+        <!-- CONTENT -->
+        <div
+          class="relative z-10 h-full grid grid-cols-1 lg:grid-cols-2 gap-16"
+        >
+          <!-- LEFT -->
+          <div class="flex items-center justify-center hero-left z-50">
+            <button class="video-play-btn  cursor-pointer">
+              <i class="fa-solid fa-play"></i>
+            </button>
+          </div>
+
+          <!-- RIGHT -->
+          <div class="flex items-center hero-right px-6">
+            <div class="max-w-xl">
+              <h1
+                class="text-white text-3xl md:text-4xl lg:text-5xl font-bold mb-6 hero-title"
+              >
+                Create Meaningful Experiences for Employees
+              </h1>
+
+              <p class="text-gray-200 text-lg mb-10 hero-text">
+                We help brands design employee-centric digital marketing
+                journeys by understanding behavior, intent, and engagement at
+                every interaction point.
+              </p>
+
+              <a
+                href="./404.html"
+                class="inline-block bg-teal-600 text-white px-10 py-4 rounded-md hero-btn"
+              >
+                Read more
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- BOTTOM STRIP -->
+        <div class="bottom-0 w-full py-8 hero-bottom">
+          <div
+            class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-10 px-6 text-white"
+          >
+            <div class="flex items-center gap-6 hero-item">
+              <span class="text-5xl font-bold text-white/80">01.</span>
+              <p class="text-xl font-semibold">Payroll Management</p>
+            </div>
+
+            <div class="flex items-center gap-6 hero-item">
+              <span class="text-5xl font-bold text-white/80">02.</span>
+              <p class="text-xl font-semibold">Employee Compensation</p>
+            </div>
+
+            <div class="flex items-center gap-6 hero-item">
+              <span class="text-5xl font-bold text-white/80">03.</span>
+              <p class="text-xl font-semibold">Benefits Management</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- VIDEO MODAL -->
+      <div
+        class="fixed inset-0 bg-black/80 video-modal opacity-0 invisible z-9999"
+      >
+        <div class="relative w-full h-full flex items-center justify-center">
+          <button class="video-close">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+
+          <div
+            class="w-[90%] max-w-4xl aspect-video bg-black scale-95 video-box"
+          >
+            <iframe
+              class="w-full h-full"
+              data-video="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1"
+              src=""
+              allow="autoplay; encrypted-media"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+      </div>
+
+      <!-- PROCESS -->
+      <section class="bg-white py-24 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+          <!-- Heading -->
+          <p class="text-teal-600 font-semibold tracking-wide gsap-step-sub">
+            The Steps of
+          </p>
+
+          <h2
+            class="text-3xl md:text-4xl lg:text-5xl font-bold text-slate-800 mt-3 gsap-step-title"
+          >
+            Digital Marketing Process
+          </h2>
+
+          <!-- Steps -->
+          <div
+            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-14 mt-20"
+          >
+            <!-- Step 01 -->
+            <div class="step-card gsap-step-item text-left">
+              <span
+                class="step-badge bg-primary rounded-full px-4 py-2 text-white"
+                >STEP 01</span
+              >
+
+              <div class="flex items-center gap-4 my-8">
+                <div class="step-icon">
+                  <img class="w-10" src="./src/assets/s1.webp" alt="s1" />
+                </div>
+
+                <div class="text-xl font-bold">
+                  <h3 class="step-title">Market Research</h3>
+                </div>
+              </div>
+
+              <p class="step-desc">
+                We analyze your industry, competitors, and then to build a
+                data-driven marketing foundation.
+              </p>
+
+              <div class="mt-4">
+                <a
+                  href="./404.html"
+                  class="inline-block border border-primary text-primary px-10 py-4 rounded-md rounded-tl-2xl rounded-br-2xl"
+                >
+                  Read more <i class="fa-solid fa-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+
+            <!-- Step 02 -->
+            <div class="step-card gsap-step-item text-left">
+              <span
+                class="step-badge bg-primary rounded-full px-4 py-2 text-white"
+                >STEP 02</span
+              >
+
+              <div class="flex items-center gap-4 my-8">
+                <div class="step-icon">
+                  <img class="w-10" src="./src/assets/s2.webp" alt="s2" />
+                </div>
+
+                <div>
+                  <h3 class="step-title">Strategy Planning</h3>
+                </div>
+              </div>
+
+              <p class="step-desc">
+                We define clear goals, select the right channels, and a
+                conversion-focused marketing roadmap.
+              </p>
+
+              <div class="mt-4">
+                <a
+                  href="./404.html"
+                  class="inline-block border border-primary text-primary px-10 py-4 rounded-md rounded-tl-2xl rounded-br-2xl"
+                >
+                  Read more <i class="fa-solid fa-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+
+            <!-- Step 03 -->
+            <div class="step-card gsap-step-item text-left">
+              <span
+                class="step-badge bg-primary rounded-full px-4 py-2 text-white"
+                >STEP 03</span
+              >
+
+              <div class="flex items-center gap-4 my-8">
+                <div class="step-icon">
+                  <img class="w-10" src="./src/assets/s3.webp" alt="s3" />
+                </div>
+
+                <div>
+                  <h3 class="step-title">Content Execution</h3>
+                </div>
+              </div>
+
+              <p class="step-desc">
+                High-impact creatives, SEO content, and ads are launched to
+                engage and convert your audience.
+              </p>
+
+              <div class="mt-4">
+                <a
+                  href="./404.html"
+                  class="inline-block border border-primary text-primary px-10 py-4 rounded-md rounded-tl-2xl rounded-br-2xl"
+                >
+                  Read more <i class="fa-solid fa-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+
+            <!-- Step 04 -->
+            <div class="step-card gsap-step-item text-left">
+              <span
+                class="step-badge bg-primary rounded-full px-4 py-2 text-white"
+                >STEP 04</span
+              >
+
+              <div class="flex items-center gap-4 my-8">
+                <div class="step-icon">
+                  <img class="w-10" src="./src/assets/s4.webp" alt="s4" />
+                </div>
+
+                <div>
+                  <h3 class="step-title">Optimization & Growth</h3>
+                </div>
+              </div>
+
+              <p class="step-desc">
+                We track performance, optimize campaigns, and scale strategies
+                to maximize ROI and long-term growth.
+              </p>
+
+              <div class="mt-4">
+                <a
+                  href="./404.html"
+                  class="inline-block border border-primary text-primary px-10 py-4 rounded-md rounded-tl-2xl rounded-br-2xl"
+                >
+                  Read more <i class="fa-solid fa-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- TEAM -->
+      <section
+        class="bg-slate-100 max-w-7xl mx-auto w-full py-24 overflow-hidden"
+      >
+        <div class="max-w-7xl mx-auto px-6">
+          <!-- Header -->
+          <div
+            class="flex flex-col lg:flex-row justify-between items-start gap-12"
+          >
+            <div>
+              <p
+                class="text-teal-600 font-semibold underline underline-offset-4 gsap-team-sub"
+              >
+                Dedicated Team
+              </p>
+
+              <h2
+                class="text-3xl md:text-4xl lg:text-5xl font-bold text-slate-800 mt-4 gsap-team-title"
+              >
+                Professional Individuals
+              </h2>
+            </div>
+
+            <p class="max-w-xl text-slate-600 leading-relaxed gsap-team-desc">
+              Our corporate solutions team brings strategic insight, operational
+              excellence, and leadership experience to help organizations scale,
+              optimize, and lead with confidence.
+            </p>
+          </div>
+
+          <!-- Cards -->
+          <div
+            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mt-20"
+          >
+            <!-- Card 1 -->
+            <div
+              class="team-card gsap-team-card relative rounded-2xl overflow-hidden"
+            >
+              <img
+                src="./src/assets/team1.webp"
+                class="w-full h-full object-cover"
+                alt="t1"
+              />
+
+              <div
+                class="absolute inset-0 bg-linear-to-t from-black/70 to-transparent"
+              ></div>
+
+              <!-- Share -->
+              <a href="./404.html" class="share-wrap z-50">
+                <div>
+                  <i class="fa-solid fa-share-nodes"></i>
+                </div>
+              </a>
+
+              <!-- Content -->
+              <div class="absolute bottom-6 left-6 text-white">
+                <p class="text-sm uppercase opacity-80">Director</p>
+                <h3 class="text-2xl font-semibold mt-1">Amelia Margaret</h3>
+              </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div
+              class="team-card gsap-team-card relative rounded-2xl overflow-hidden"
+            >
+              <img
+                src="./src/assets/team2.webp"
+                class="w-full h-full object-cover"
+                alt="t2"
+              />
+
+              <div
+                class="absolute inset-0 bg-linear-to-t from-black/70 to-transparent"
+              ></div>
+
+              <!-- Share -->
+              <a href="./404.html" class="share-wrap z-50">
+                <div>
+                  <i class="fa-solid fa-share-nodes"></i>
+                </div>
+              </a>
+
+              <div class="absolute bottom-6 left-6 text-white">
+                <p class="text-sm uppercase opacity-80">Team Leader</p>
+                <h3 class="text-2xl font-semibold mt-1">Andrew Cameron</h3>
+              </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div
+              class="team-card gsap-team-card relative rounded-2xl overflow-hidden"
+            >
+              <img
+                src="./src/assets/team3.webp"
+                class="w-full h-full object-cover"
+                alt="t3"
+              />
+
+              <div
+                class="absolute inset-0 bg-linear-to-t from-black/70 to-transparent"
+              ></div>
+
+              <!-- Share -->
+              <a href="./404.html" class="share-wrap z-50">
+                <div>
+                  <i class="fa-solid fa-share-nodes"></i>
+                </div>
+              </a>
+
+              <div class="absolute bottom-6 left-6 text-white">
+                <p class="text-sm uppercase opacity-80">Manager</p>
+                <h3 class="text-2xl font-semibold mt-1">Sofia Charlotte</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- GRID -->
+      <section class="py-28 bg-white overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6">
+          <!-- Header -->
+          <div class="text-center mb-16">
+            <p
+              class="text-teal-600 font-semibold underline underline-offset-4 gsap-insight-sub"
+            >
+              Find Out Our
+            </p>
+            <h2
+              class="text-3xl md:text-4xl lg:text-5xl font-bold text-slate-800 mt-3 gsap-insight-title"
+            >
+              Insights & Intelligence
+            </h2>
+          </div>
+
+          <!-- GRID -->
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            <!-- LEFT BIG CARD -->
+            <div
+              class="gsap-insight-big insight-card relative rounded-xl overflow-hidden"
+            >
+              <!-- overlay -->
+              <div
+                class="w-full h-full bg-linear-to-b from-transparent to-black/90 absolute inset-0 z-10"
+              ></div>
+              <img
+                src="./src/assets/b2.webp"
+                alt="b1"
+                class="w-full h-100 object-cover"
+              />
+
+              <div
+                class="absolute top-6 left-6 flex items-center gap-2 text-white text-sm font-semibold z-20"
+              >
+                <i class="fa-regular fa-file-lines"></i>
+                <span>COMPLIANCE AUDITS</span>
+              </div>
+
+              <div class="absolute bottom-6 left-6 right-6 text-white z-20">
+                <p class="text-xs opacity-80 mb-2">OCTOBER 8, 2021</p>
+                <h3 class="text-2xl font-semibold leading-snug">
+                  How to Handle Employee Compliance Frameworks
+                </h3>
+
+                <div class="flex items-center gap-3 mt-4">
+                  <img
+                    src="./src/assets/t2.webp"
+                    alt="t2"
+                    class="w-10 h-10 rounded-full"
+                  />
+                  <div class="text-sm">
+                    <p class="opacity-80">POSTED BY</p>
+                    <p class="font-semibold">Evan Thomas</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- RIGHT BIG CARD -->
+            <div
+              class="gsap-insight-big insight-card relative rounded-xl overflow-hidden"
+            >
+              <!-- Overlay -->
+
+              <div
+                class="w-full h-full bg-linear-to-b from-transparent to-black/90 absolute inset-0 z-10"
+              ></div>
+
+              <img
+                src="./src/assets/b1.webp"
+                alt="b2"
+                class="w-full h-100 object-cover"
+              />
+
+              <div
+                class="absolute top-6 left-6 flex items-center gap-2 text-white text-sm font-semibold z-20"
+              >
+                <i class="fa-solid fa-user-tie"></i>
+                <span>COACHING</span>
+              </div>
+
+              <div class="absolute bottom-6 left-6 right-6 text-white z-20">
+                <p class="text-xs opacity-80 mb-2">OCTOBER 8, 2021</p>
+                <h3 class="text-2xl font-semibold leading-snug">
+                  How to Develop High-Performance Corporate Teams
+                </h3>
+
+                <div class="flex items-center gap-3 mt-4">
+                  <img
+                    src="./src/assets/t4.webp"
+                    alt="t4"
+                    class="w-10 h-10 rounded-full"
+                  />
+                  <div class="text-sm">
+                    <p class="opacity-80">POSTED BY</p>
+                    <p class="font-semibold">Roman Brayden</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- SMALL CARDS -->
+          <div
+            class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mt-10"
+          >
+            <div class="gsap-insight-small">
+              <div class="insight-small-card">
+                <p
+                  class="text-sm font-semibold text-slate-500 flex items-center gap-2"
+                >
+                  <i class="fa-solid fa-user-tie text-teal-600"></i> COACHING
+                </p>
+                <p class="text-xs text-slate-400 mt-4">OCTOBER 8, 2021</p>
+                <h4 class="font-semibold text-slate-800 mt-3">
+                  Managing Workplace Culture in Growing Enterprises
+                </h4>
+
+                <div class="flex items-center gap-3 mt-6">
+                  <img
+                    src="./src/assets/t1.webp"
+                    alt="t1"
+                    class="w-9 h-9 rounded-full"
+                  />
+                  <div class="text-sm">
+                    <p class="text-xs text-slate-400">POSTED BY</p>
+                    <p class="font-semibold text-slate-700">Rajina Hellan</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="gsap-insight-small">
+              <div class="insight-small-card">
+                <p
+                  class="text-sm font-semibold text-slate-500 flex items-center gap-2"
+                >
+                  <i class="fa-regular fa-handshake text-teal-600"></i> EMPLOYEE
+                  RELATIONS
+                </p>
+                <p class="text-xs text-slate-400 mt-4">OCTOBER 8, 2021</p>
+                <h4 class="font-semibold text-slate-800 mt-3">
+                  Workforce Strategy Challenges & Opportunities
+                </h4>
+
+                <div class="flex items-center gap-3 mt-6">
+                  <img
+                    src="./src/assets/t2.webp"
+                    alt="t2"
+                    class="w-9 h-9 rounded-full"
+                  />
+                  <div class="text-sm">
+                    <p class="text-xs text-slate-400">POSTED BY</p>
+                    <p class="font-semibold text-slate-700">Evan Thomas</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="gsap-insight-small">
+              <div class="insight-small-card">
+                <p
+                  class="text-sm font-semibold text-slate-500 flex items-center gap-2"
+                >
+                  <i class="fa-solid fa-calculator text-teal-600"></i> COACHING
+                </p>
+                <p class="text-xs text-slate-400 mt-4">OCTOBER 8, 2021</p>
+                <h4 class="font-semibold text-slate-800 mt-3">
+                  Why Businesses Are Process Payroll Operations
+                </h4>
+
+                <div class="flex items-center gap-3 mt-6">
+                  <img
+                    src="./src/assets/t3.webp"
+                    alt="t3"
+                    class="w-9 h-9 rounded-full"
+                  />
+                  <div class="text-sm">
+                    <p class="text-xs text-slate-400">POSTED BY</p>
+                    <p class="font-semibold text-slate-700">Priyanka Mohan</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="gsap-insight-small">
+              <div class="insight-small-card">
+                <p
+                  class="text-sm font-semibold text-slate-500 flex items-center gap-2"
+                >
+                  <i class="fa-solid fa-scale-balanced text-teal-600"></i>
+                  COMPLIANCE AUDITS
+                </p>
+                <p class="text-xs text-slate-400 mt-4">OCTOBER 8, 2021</p>
+                <h4 class="font-semibold text-slate-800 mt-3">
+                  Understanding Executive Compliance with Leadership
+                </h4>
+
+                <div class="flex items-center gap-3 mt-6">
+                  <img
+                    src="./src/assets/t4.webp"
+                    alt="t4"
+                    class="w-9 h-9 rounded-full"
+                  />
+                  <div class="text-sm">
+                    <p class="text-xs text-slate-400">POSTED BY</p>
+                    <p class="font-semibold text-slate-700">Charles</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CASE -->
+      <section
+        class="max-w-7xl mx-auto w-full bg-slate-100 py-20 overflow-hidden"
+      >
+        <div class="px-6">
+          <!-- Heading -->
+          <div class="mb-12">
+            <h2
+              class="text-black text-3xl md:text-4xl lg:text-5xl font-semibold"
+            >
+              Corporate Case Studies
+            </h2>
+            <p class="text-slate-700 mt-3 max-w-2xl">
+              Real-world corporate solutions delivering measurable growth,
+              operational efficiency, and digital transformation.
+            </p>
+          </div>
+
+          <!-- SPLIDE -->
+          <div id="caseSplide" class="splide">
+            <div class="splide__track py-10">
+              <ul class="splide__list">
+                <!-- Card -->
+                <li class="splide__slide">
+                  <div class="cs-card">
+                    <i class="fa-solid fa-building-columns cs-icon"></i>
+                    <h3 class="cs-title">Enterprise Transformation</h3>
+                    <p class="cs-desc">
+                      Migrated legacy systems to a cloud-first architecture,
+                      improving scalability and costs by 38%.
+                    </p>
+                    <span class="cs-tag">Finance Sector</span>
+                  </div>
+                </li>
+
+                <li class="splide__slide">
+                  <div class="cs-card">
+                    <i class="fa-solid fa-briefcase cs-icon"></i>
+                    <h3 class="cs-title">Corporate CRM Optimization</h3>
+                    <p class="cs-desc">
+                      Unified sales and support workflows into a single CRM,
+                      boosting lead conversion by 46%.
+                    </p>
+                    <span class="cs-tag">B2B Enterprise</span>
+                  </div>
+                </li>
+
+                <li class="splide__slide">
+                  <div class="cs-card">
+                    <i class="fa-solid fa-chart-line cs-icon"></i>
+                    <h3 class="cs-title">Data-Driven Growth Strategy</h3>
+                    <p class="cs-desc">
+                      Implemented real-time analytics dashboards for executive
+                      decision-making across global teams.
+                    </p>
+                    <span class="cs-tag">Consulting</span>
+                  </div>
+                </li>
+
+                <li class="splide__slide">
+                  <div class="cs-card">
+                    <i class="fa-solid fa-shield-halved cs-icon"></i>
+                    <h3 class="cs-title">Corporate Cybersecurity</h3>
+                    <p class="cs-desc">
+                      Strengthened infrastructure with zero-trust security,
+                      reducing breach risks across distributed offices.
+                    </p>
+                    <span class="cs-tag">IT & Security</span>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ -->
+      <section class="faq-section py-28 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6">
+          <!-- HEADER -->
+          <div class="faq-header text-center mb-20">
+            <span
+              class="uppercase tracking-widest text-sm text-primary font-semibold"
+            >
+              General FAQ’s
+            </span>
+            <h2 class="text-3xl md:text-4xl lg:text-5xl font-extrabold mt-4">
+              Got Any Questions?
+            </h2>
+          </div>
+
+          <!-- FAQ GRID -->
+          <div class="faq-grid grid md:grid-cols-2 gap-x-16 gap-y-6">
+            <!-- COLUMN -->
+            <div class="faq-col space-y-4">
+              <div class="faq-item">
+                <button class="faq-trigger">
+                  <span class="faq-index">01</span>
+                  <span class="faq-question">
+                    How can use content marketing to increase efficient way?
+                  </span>
+                  <span class="faq-arrow">
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </span>
+                </button>
+                <div class="faq-answer pl-8 py-1">
+                  <p>
+                    Content marketing improves efficiency by building trust,
+                    increasing organic reach, and guiding users naturally
+                    through the funnel.
+                  </p>
+                </div>
+              </div>
+
+              <div class="faq-item">
+                <button class="faq-trigger">
+                  <span class="faq-index">02</span>
+                  <span class="faq-question">
+                    How can content marketing help purchase journey?
+                  </span>
+                  <span class="faq-arrow">
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </span>
+                </button>
+                <div class="faq-answer pl-8 py-1">
+                  <p>
+                    It supports buyers at every stage with relevant education
+                    and trust-building content.
+                  </p>
+                </div>
+              </div>
+
+              <div class="faq-item">
+                <button class="faq-trigger">
+                  <span class="faq-index">03</span>
+                  <span class="faq-question">
+                    How do we measure content’s on sales and revenue?
+                  </span>
+                  <span class="faq-arrow">
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </span>
+                </button>
+                <div class="faq-answer pl-8 py-1">
+                  <p>
+                    Measure assisted conversions, attribution paths, and funnel
+                    impact.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- COLUMN -->
+            <div class="faq-col space-y-4">
+              <div class="faq-item">
+                <button class="faq-trigger">
+                  <span class="faq-index">04</span>
+                  <span class="faq-question">
+                    How does marketing without talking about or promoting?
+                  </span>
+                  <span class="faq-arrow">
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </span>
+                </button>
+                <div class="faq-answer pl-8 py-1">
+                  <p>
+                    By delivering value first, customers engage without feeling
+                    sold to.
+                  </p>
+                </div>
+              </div>
+
+              <div class="faq-item">
+                <button class="faq-trigger">
+                  <span class="faq-index">05</span>
+                  <span class="faq-question">
+                    Pain these cases are perfectly simple and easy to
+                    distinguish.
+                  </span>
+                  <span class="faq-arrow">
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </span>
+                </button>
+                <div class="faq-answer pl-8 py-1">
+                  <p>
+                    Clear structure and intent make decision points easy to
+                    recognize.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT FORM -->
+      <section class="max-w-7xl mx-auto bg-slate-100 py-24 overflow-hidden">
+        <div class="px-6">
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+            <!-- LEFT INFO -->
+            <div class="contact-info">
+              <div>
+                <span class="text-teal-600 font-semibold underline">
+                  Contact Info to
+                </span>
+                <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold mt-4">
+                  Reach Our Expert Team
+                </h2>
+                <p class="text-slate-600 mt-4 max-w-md">
+                  Send a message through given form, If your enquiry is time
+                  sensitive please use below contact details.
+                </p>
+              </div>
+
+              <div class="flex gap-4 pt-12">
+                <a href="./404.html" class="social-icon"
+                  ><i class="fa-brands fa-facebook-f"></i
+                ></a>
+                <a href="./404.html" class="social-icon"
+                  ><i class="fa-brands fa-twitter"></i
+                ></a>
+                <a href="./404.html" class="social-icon"
+                  ><i class="fa-brands fa-skype"></i
+                ></a>
+                <a href="./404.html" class="social-icon"
+                  ><i class="fa-brands fa-instagram"></i
+                ></a>
+              </div>
+
+              <div class="flex flex-col justify-center gap-6 mt-16">
+                <div class="info-card">
+                  <div>
+                    <div class="info-icon">
+                      <i class="fa-solid fa-location-dot"></i>
+                    </div>
+                  </div>
+                  <div>
+                    <h4>Post Address</h4>
+                    <p>280 Granite Run Drive Suite #200 Lancaster, PA 1760</p>
+                  </div>
+                </div>
+
+                <div class="info-card">
+                  <div>
+                    <div class="info-icon">
+                      <i class="fa-solid fa-phone"></i>
+                    </div>
+                  </div>
+                  <div>
+                    <h4>General Enquires</h4>
+                    <p>Phone: +98 060 712 34 & Email: sendmail@qetus.com</p>
+                  </div>
+                </div>
+
+                <div class="info-card">
+                  <div>
+                    <div class="info-icon">
+                      <i class="fa-solid fa-clock"></i>
+                    </div>
+                  </div>
+                  <div>
+                    <h4>Operation Hours</h4>
+                    <p>Mon-Saturday: 09.00 to 07.00 (Sunday: Closed)</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- RIGHT FORM -->
+            <form
+              class="contactForm bg-white rounded-2xl shadow-xl px-6 py-6 md:p-10"
+              id="contactForm"
+            >
+              <div class="space-y-6">
+                <div>
+                  <label class="block text-sm font-semibold mb-2"
+                    >YOUR NAME</label
+                  >
+                  <div class="relative">
+                    <input
+                      type="text"
+                      class="w-full border border-gray-300 rounded-lg px-4 py-3 pr-12"
+                      placeholder="Enter Your Name"
+                      required
+                    />
+                    <i
+                      class="fa-solid fa-user absolute right-4 top-1/2 -translate-y-1/2 text-teal-600"
+                    ></i>
+                  </div>
+                </div>
+
+                <div>
+                  <label class="block text-sm font-semibold mb-2"
+                    >YOUR EMAIL</label
+                  >
+                  <div class="relative">
+                    <input
+                      type="email"
+                      id="emailField"
+                      class="w-full border border-gray-300 rounded-lg px-4 py-3 pr-12"
+                      placeholder="Enter Your Email"
+                      required
+                    />
+                    <i
+                      class="fa-solid fa-envelope absolute right-4 top-1/2 -translate-y-1/2 text-teal-600"
+                    ></i>
+                  </div>
+                </div>
+
+                <div>
+                  <label class="block text-sm font-semibold mb-2"
+                    >SUBJECT</label
+                  >
+                  <div class="relative">
+                    <input
+                      type="text"
+                      class="w-full border border-gray-300 rounded-lg px-4 py-3 pr-12"
+                      placeholder="Enter Your Subject"
+                      required
+                    />
+                    <i
+                      class="fa-solid fa-folder absolute right-4 top-1/2 -translate-y-1/2 text-teal-600"
+                    ></i>
+                  </div>
+                </div>
+
+                <div>
+                  <label class="block text-sm font-semibold mb-2">
+                    YOUR MESSAGE (OPTIONAL)
+                  </label>
+                  <div class="relative">
+                    <textarea
+                      class="w-full border border-gray-300 rounded-lg px-4 py-3 pr-12 h-36 resize-none"
+                      placeholder="Enter Your Message"
+                    ></textarea>
+                    <i
+                      class="fa-solid fa-comment absolute right-4 top-4 text-teal-600"
+                    ></i>
+                  </div>
+                </div>
+
+                <button
+                  type="submit"
+                  class="contact-submit w-full bg-teal-700 text-white py-4 rounded-lg font-semibold"
+                >
+                  SUBMIT
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <!-- FOOTER -->
+      <footer
+        class="create-footer max-w-7xl mx-auto bg-[#2b3441] text-gray-300 pt-24"
+      >
+        <div class="px-6">
+          <!-- TOP GRID -->
+          <div class="footer-grid grid lg:grid-cols-5 gap-14 pb-20">
+            <!-- BRAND -->
+            <div class="footer-brand space-y-6">
+              <div class="flex items-center gap-3 text-white text-xl font-bold">
+                <i class="fa-solid fa-circle-notch text-teal-400"></i>
+                STACKLY
+              </div>
+
+              <p class="leading-relaxed">
+                Duty the obligations of business will frequently occur that
+                pleasure have too repudiated annoyances endures accepted.
+              </p>
+            </div>
+
+            <!-- GET IN TOUCH -->
+            <div class="footer-col">
+              <h4 class="footer-title">Get In Touch</h4>
+
+              <div class="space-y-6 mt-8">
+                <div>
+                  <p class="text-white font-semibold mb-1">Location</p>
+                  <p>
+                    280 Granite Run Drive Suite<br />#200 Lancaster, PA 1760
+                  </p>
+                </div>
+
+                <div>
+                  <p class="text-white font-semibold mb-1">Contact</p>
+                  <p>Phone : +98 060 712 34</p>
+                  <p>Mail Us : sendmail@stackly.com</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- COMPANY -->
+            <div class="footer-col">
+              <h4 class="footer-title">Company</h4>
+              <ul class="footer-links mt-8 space-y-4">
+                <a href="./404.html">Home</a>
+                <a href="./404.html">About Us</a>
+                <a href="./404.html">Contact</a>
+                <a href="./404.html">Professionals</a>
+                <a href="./404.html">Insights</a>
+                <a href="./404.html">HR Solutions</a>
+              </ul>
+            </div>
+
+            <!-- INFORMATION -->
+            <div class="footer-col">
+              <h4 class="footer-title">Information</h4>
+              <ul class="footer-links mt-8 space-y-4">
+                <a href="./404.html">How it’s Work</a>
+                <a href="./404.html">Partners</a>
+                <a href="./404.html">Testimonials</a>
+                <a href="./404.html">Key Areas</a>
+                <a href="./404.html">Case Studies</a>
+                <a href="./404.html">Pricing</a>
+              </ul>
+            </div>
+
+            <!-- ESSENTIALS -->
+            <div class="footer-col">
+              <h4 class="footer-title">Essentials</h4>
+              <ul class="footer-links mt-8 space-y-4">
+                <a href="./404.html">Careers</a>
+                <a href="./404.html">Infrastructure</a>
+                <a href="./404.html">Client Support</a>
+                <a href="./404.html">Privacy Policy</a>
+                <a href="./404.html">Terms of Use</a>
+                <a href="./404.html">Sitemap</a>
+              </ul>
+            </div>
+          </div>
+
+          <!-- BOTTOM -->
+          <div
+            class="border-t border-white/10 py-6 flex flex-col md:flex-row justify-between items-center gap-6 footer-bottom"
+          >
+            <p class="text-sm">© 2026 stackly. All Rights Reserved.</p>
+
+            <div class="flex gap-4 footer-social">
+              <a href="./404.html" class="social-btn">
+                <i class="fa-brands fa-facebook-f"></i>
+              </a>
+              <a href="./404.html" class="social-btn">
+                <i class="fa-brands fa-twitter"></i>
+              </a>
+              <a href="./404.html" class="social-btn">
+                <i class="fa-brands fa-skype"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <!-- JS -->
+    <script src="./script.js"></script>
+  </body>
+</html>
